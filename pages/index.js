@@ -15,7 +15,7 @@ export default function Home() {
       />
 
       {messages.length > 0 && messages[messages.length - 1].role !== "user" ? (
-        <div className="whitespace-pre-wrap mx-6 p-2 shadow-lg overflow-y-auto">
+        <div className="whitespace-pre-wrap h-[78vh] md:h-[70vh] mx-2 p-2 shadow-lg overflow-y-auto">
           {messages[messages.length - 1].content}
           <button
             className="absolute right-0 top-[90px] p-2 bg-blue-500 text-white"

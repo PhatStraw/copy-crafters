@@ -25,7 +25,7 @@ export default async function handler(req) {
           {
             role: "user",
             content: ` 
-            Given these keywords write a description no longer than 567 for the product.
+            Write a description for a product given these keywords.
         
             Keywords: ${messages[messages.length - 1].content}
             `,
