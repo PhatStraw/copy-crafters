@@ -7,7 +7,7 @@ export default function Home() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
 
   return (
-    <div className="mx-auto w-full max-w-xl pt-24 flex flex-col">
+    <div className="mx-auto w-full max-w-xl pt-12 md:pt-24 flex flex-col">
       <Search
         handleInputChange={handleInputChange}
         handleSubmit={handleSubmit}
@@ -15,7 +15,7 @@ export default function Home() {
       />
 
       {messages.length > 0 && messages[messages.length - 1].role !== "user" ? (
-        <div className="whitespace-pre-wrap mx-6 p-2 shadow-lg">
+        <div className="whitespace-pre-wrap mx-6 p-2 shadow-lg overflow-y-auto">
           {messages[messages.length - 1].content}
           <button
             className="absolute right-0 top-[90px] p-2 bg-blue-500 text-white"
