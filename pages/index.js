@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       ) : (
         <div className="text-xl">
-          Enter a product description and keywords then click enter to generate a description.
+          Input your product features and press Enter to instantly craft an engaging product description that sells!
         </div>
       )}
     </div>
