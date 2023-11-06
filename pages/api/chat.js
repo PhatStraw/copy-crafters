@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import OpenAI from "openai";
 import { OpenAIStream, StreamingTextResponse } from "ai";
 
-// IMPORTANT! Set the runtime to edge
 export const runtime = "edge";
 
 export default async function handler(req) {
