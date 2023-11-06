@@ -28,7 +28,7 @@ export default function Home() {
           </button>
         </div>
       ) : (
-        <div className="whitespace-pre-wrap my-4 text-xl shadow-lg p-2 ">
+        <div className="whitespace-pre-wrap m-4 text-xl shadow-lg p-2 ">
           Input your product features and press Enter to instantly craft an
           engaging product description that sells!
         </div>
